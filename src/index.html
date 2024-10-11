@@ -5,15 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-advancedjs-hw-01</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/1-gallery.js" type="module"></script>
-    <script src="./js/2-form.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    <!--    <script src="js/pixabay-api.js" type="module"></script>-->
+    <!--    <script src="js/render-functions.js" type="module"></script>-->
   </head>
   <body>
-    <main>
-      <a href="./1-gallery.html">Task 1</a>
-      <a href="./2-form.html">Task 2</a>
+    <main class="container">
+
+      <form class="query-form" autocomplete="off">
+
+        <label>
+          <input class="query-input" type="text" name="query" autofocus placeholder="Search images..." />
+        </label>
+
+        <button type="submit">Search</button>
+      </form>
+
+      <span class="loader"></span>
+
+      <ul class="gallery"></ul>
+
     </main>
   </body>
 </html>
